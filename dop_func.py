@@ -9,6 +9,9 @@ dler = nltk.downloader.Downloader()
 sw_eng = set(stopwords.words('english'))
 stemmer = SnowballStemmer(language='english')
 dler.download('omw-1.4')
+dler.download('averaged_perceptron_tagger')
+
+
 
 def get_clean(x):
     x = str(x).lower().replace('\\', '').replace('_', ' ')
